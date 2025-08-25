@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <!-- <link rel="stylesheet" href="/Navbar/assets/css/style.css"> -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        header{
+            height: 100px;
+            padding: 0 24px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            padding: 12px;
+        }
+
+        .logo > a > img{
+            height: 75px;
+        }
+        .menus{
+            height: 100%;
+            display: flex;
+        }
+
+        .menus > ul {
+            display: flex;
+            align-items: stretch;
+        }
+
+        .menus > ul > li{
+            display: flex;
+            align-items: center;
+            margin: 0 10px;
+
+        }
+        .menus > ul > li:hover{
+            border-bottom: 3px double black;
+        }
+
+        .hdr_btns > button{
+            padding: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+        .hdr_btns > button:hover{
+            background-color: white;
+            color: black;
+            /* border: 2px solid black; */
+        }
+
+     </style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="/Navbar/assets/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="menus">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="hdr_btns">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+    </header>
+</body>
+</html>
