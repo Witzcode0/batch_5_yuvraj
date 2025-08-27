@@ -1,82 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
-    <!-- <link rel="stylesheet" href="/Navbar/assets/css/style.css"> -->
-     <style>
-        *{
+    <title>Dropdown Menu</title>
+    <style>
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        li{
+        li {
             list-style-type: none;
         }
 
-        header{
-            height: 100px;
-            padding: 0 24px; 
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+
+        .logo>img {
+            height: 50px;
+        }
+
+        .menus {
+            position: relative;
+        }
+
+        .menus ul {
+            display: flex;
+        }
+
+        .menus ul li {
+            margin-right: 15px;
+
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            border: 1px solid;
+            width: 100%;
+            box-shadow: 2px 2px 10px black;
+            border-radius: 15px;
+        }
+
+        .menus ul li:hover .submenu {
+            display: block;
+        }
+
+        .box {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
-
-        .logo {
-            padding: 12px;
-        }
-
-        .logo > a > img{
-            height: 75px;
-        }
-        .menus{
-            height: 100%;
+        .box ul {
             display: flex;
+            flex-direction: column;
         }
-
-        .menus > ul {
-            display: flex;
-            align-items: stretch;
-        }
-
-        .menus > ul > li{
-            display: flex;
-            align-items: center;
-            margin: 0 10px;
-
-        }
-        .menus > ul > li:hover{
-            border-bottom: 3px double black;
-        }
-
-        .hdr_btns > button{
-            padding: 10px;
-            border: none;
-            background-color: black;
-            color: white;
-        }
-        .hdr_btns > button:hover{
-            background-color: white;
-            color: black;
-            /* border: 2px solid black; */
-        }
-
-     </style>
-
+    </style>
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <a href="">
-                <img src="/Navbar/assets/images/logo.png" alt="">
-            </a>
+            <img src="/assets/images/logo.png" alt="logo">
         </div>
         <div class="menus">
             <ul>
                 <li>Home</li>
-                <li>Services</li>
+                <li>
+                    Services
+                    <div class="submenu">
+                        <div class="box">
+                            <ul>
+                                <li>Service 1</li>
+                                <li>Service 2</li>
+                                <li>Service 3</li>
+                                <li>Service 4</li>
+                            </ul>
+                            <ul>
+                                <li>Service 1</li>
+                                <li>Service 2</li>
+                                <li>Service 3</li>
+                                <li>Service 4</li>
+                            </ul>
+                            <ul>
+                                <li>Service 1</li>
+                                <li>Service 2</li>
+                                <li>Service 3</li>
+                                <li>Service 4</li>
+                            </ul>
+                            <ul>
+                                <li>Service 1</li>
+                                <li>Service 2</li>
+                                <li>Service 3</li>
+                                <li>Service 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li>Blog</li>
                 <li>About</li>
                 <li>Contact</li>
@@ -88,4 +132,5 @@
         </div>
     </header>
 </body>
+
 </html>
