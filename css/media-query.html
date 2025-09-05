@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        /* syntax:
+        @media (condition) {
+            CSS rules here
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .hdr-contact-details {
+            background-color: white;
+            padding: 8px 24px;
+           text-align: center;
+        }
+
+        .hdr-contact-details>ul {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .header{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 24px;
+            background-color: chartreuse;
+        }
+        .menu > ul{
+            display: flex;
+        }
+
+        .menu > ul >li{
+            margin-left: 24px;
+        }
+        @media (max-width: 319px) {
+            .hdr-contact-details>ul {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .menu > ul{
+                position: absolute;
+                top:100% ;
+                left: 0;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+            }
+        }
+
+        /* Mobile devices */
+        @media (min-width: 320px) and (max-width: 480px) {
+            body {
+                background-color: red;
+            }
+            .menu > ul{
+                position: absolute;
+                top:100% ;
+                left: 0;
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+            }
+
+            .hdr-contact-details>ul {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        /* Tablets (portrait) */
+        @media (min-width: 481px) and (max-width: 768px) {
+            body {
+                background-color: green;
+            }
+            .hamburger-btn{
+                display: none;
+            }
+        }
+
+        /* Tablets (landscape) & small laptops */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            body {
+                background-color: blue;
+            }
+            .hamburger-btn{
+                display: none;
+            }
+        }
+
+        /* Laptops and small desktops */
+        @media (min-width: 1025px) and (max-width: 1200px) {
+            body {
+                background-color: orange;
+            }
+            .hamburger-btn{
+                display: none;
+            }
+        }
+
+        /* Large desktops */
+        @media (min-width: 1201px) {
+            body {
+                background-color: violet;
+            }
+            .hamburger-btn{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hdr-contact-details">
+        <ul>
+            <li>(+91) 567-8763-876</li>
+            <li>Example@domain.com</li>
+            <li>Baroda, Gujarat, India</li>
+        </ul>
+    </div>
+    <div class="header">
+        <div class="logo">
+            <h4>Logo.</h4>
+        </div>
+        <div class="hamburger-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

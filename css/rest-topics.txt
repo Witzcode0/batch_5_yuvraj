@@ -1,4 +1,3 @@
 CSS3 – Animation
-CSS3 – Multi Columns
+CSS3 – Multi Columns (grid)
 CSS3 – Box Sizing
-CSS3 – Responsive
