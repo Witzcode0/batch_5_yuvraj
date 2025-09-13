@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100%;
+            height: 500px;
+            border:1px solid violet;
+            display: grid;
+            grid-template-areas: 'myArea myArea myArea myArea myArea myArea myArea';
+            /* grid-template-columns: 50% 50%; */
+            /* grid-template-columns: 30% 70%; */
+            /* grid-template-columns: 100px 200px 300px 400px; */
+            /* grid-template-columns: auto auto auto auto; */
+            /* grid-template-columns: 100px auto 100px auto; */
+            /* grid-template-columns: 1fr 1fr 2fr 1fr; */
+            /* grid-template-columns:  100px 100px 100px 100px; */
+
+            /* grid-template-rows: 100px 200px; */
+
+            /* x-axes main */
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: center; */
+            /* justify-content: space-evenly;
+            justify-content: space-between;
+            justify-content: space-around; */
+
+            /* y-axes cross */
+
+            /* align-content: start;
+            align-content: end;
+            align-content: center;
+            align-content: space-evenly;
+            align-content: space-around;
+            align-content: space-between; */
+
+            /* shorthand for justify-content and align content */
+
+            /* place-content: y x; */
+            /* place-content:  space-between center; */
+        }
+        .item{
+            border: 1px solid blueviolet;
+        }
+
+        .item-1{
+            grid-area: myArea;
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            /* grid-column: 1 / span 2; */
+            /* grid-column: 1 / 4; */
+        }
+        .item-2{
+            /* grid-row-start: 2;
+            grid-row-end: 4 */
+            /* grid-row: 2 / 4; */
+        }
+        .item-8{
+            /* grid-column-start: 2; */
+            /* grid-column-end: 4 */
+        }
+        .item-3{
+            /* grid-area: 1 / 2 / 3 / 3; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <div class="item item-6">item-6</div>
+        <div class="item item-7">item-7</div>
+        <div class="item item-8">item-8</div>
+    </div>
+</body>
+</html>
