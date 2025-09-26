@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            border: 2px solid black;
+            width: 100%;
+            text-align: center;
+        }
+        .black-theme{
+            background-color: black;
+            color: white;
+        }
+        .white-theme{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="white-theme">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, qui!</p>
+        <button id="blackTheme" onclick="toggleTheme()">black-theme</button>
+    </div>
+
+    <script>
+        let btnBlack = document.getElementById("blackTheme");
+        // console.log(box);
+        // console.log(btnBlack);
+        
+        function toggleTheme(){
+            let box = document.getElementById("box");
+            let getAtt = box.getAttribute("class");
+            console.log(getAtt);
+            if( box.getAttribute("class") === 'white-theme'){
+                box.classList.remove("white-theme");
+                box.classList.add("black-theme");
+                box.style.border = "10px dashed white";
+            }else{
+                box.classList.remove("black-theme");
+                box.classList.add("white-theme");
+                box.style.border = "10px dashed black";
+            }
+            
+
+        }
+
+
+        
+        
+    </script>
+</body>
+</html>
