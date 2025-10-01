@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        click - User clicks an element
+        mouseover - Mouse pointer moves over element
+        keydown - Key is pressed
+        submit - Form is submitted
+        change - Input field value changes
+        load - Page finishes loading
+    -->
+    <!-- <p id="para">Lorem ipsum dolor sit amet.</p>
+    <button id="btn" onclick="btnClick()">Click Me</button> -->
+
+    <!-- <form action="">
+        <input type="text"  name="title" id="title">
+    </form> -->
+
+    <!-- <div id="parent">
+        <button id="child">Click Me</button>
+    </div> -->
+
+    <!-- <div id="outer">
+        <button id="inner">Click Me</button>
+    </div> -->
+
+    <a href="https://bitbaroda.com/home/branch-bit-vadodara-sayajigunj" id="link">BIT</a>
+
+
+    <script>
+        // document.getElementById("link").addEventListener("click", function(event){
+        //     alert("before prevent default!!!")
+            // event.preventDefault();
+        //     alert("after prevent default!!!")
+        // })
+
+        // document.getElementById("outer").addEventListener("click", function () {
+        //     alert("Outer Div Clicked");
+        // });
+
+        // document.getElementById("inner").addEventListener("click", function (event) {
+        //     alert("Button Clicked");
+        //     event.stopPropagation();  // Stops event from bubbling up to #outer
+        // });
+
+        //         document.getElementById("parent").addEventListener("click", function() {
+        //   alert("Parent clicked");
+        // });
+
+        // document.getElementById("child").addEventListener("click", function() {
+        //   alert("Child clicked");
+        // });
+
+        document.getElementById("parent").addEventListener("click", function () {
+            alert("Parent clicked");
+        }, true); // true enables capturing
+
+        document.getElementById("child").addEventListener("click", function (event) {
+            event.stopPropagation();
+            alert("Child clicked");
+        });
+
+
+
+        // document.getElementById("title").addEventListener("change", function(){
+        //     // console.log(this);
+        //     console.log("kjfhj");
+        // })
+
+        // const btnClick = () => {
+        //     return alert('btn clicked');
+        // }
+
+        // let btn = document.getElementById("btn").onclick = function(){
+        //      return alert('btn clicked');
+        // }
+
+        // document.getElementById("btn").addEventListener("click", function(){
+        //     return alert("Button clicked!!!");
+        // })
+        // document.getElementById("para").addEventListener("click", function(){
+        //     return alert("Button clicked!!!");
+        // })
+        document.getElementById("para").addEventListener("mouseover", function () {
+            return alert("Button clicked!!!");
+        })
+
+    </script>
+</body>
+
+</html>
