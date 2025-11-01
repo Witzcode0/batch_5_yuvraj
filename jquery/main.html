@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <style>
+        p {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        #panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  /* display: none; */
+}   
+
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+div{
+    height: 100px;
+    border:1px solid violet;
+}
+    </style>
+</head>
+
+<body>
+    <p id="p1">jQuery is fun!!</p>
+    <button>Click me</button>
+
+    <!-- <button id="stop">Stop sliding</button>
+
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div> -->
+    <!-- <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div> -->
+
+    <!-- <p id="para1" style="width:80px;height:80px;background-color:red;">para1</p>
+    <p id="para2"style="width:80px;height:80px;background-color:blue;">para2</p>
+    <p id="para3"style="width:80px;height:80px;background-color:green;">para3</p> -->
+
+    <!-- <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">Toggle</button> -->
+
+
+    <!-- <button id="fadein" >fadein</button>
+    <button id="fadeout">fadeout</button>
+    <button id="fadeToggle">fadeToggle</button>
+    <button id="fadeTo">fadeTo</button> -->
+
+    <!-- <button>Start Animation</button>
+    <div style="background:#98bf21;height:20px;width:100px;position:absolute;"></div> -->
+    <script>
+
+        $(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+  });
+});
+
+//         $(document).ready(function(){
+//   $("#flip").click(function(){
+//     $("#panel").slideDown(5000);
+//   });
+//   $("#stop").click(function(){
+//     $("#panel").stop();
+//   });
+// });
+
+        // jQuery Animations - The animate() Method
+        // $(selector).animate({params},speed,callback);
+
+//         $(document).ready(function(){
+//   $("button").click(function(){
+//     $("div").animate({left: '250px', height:"100px"});
+//   });
+// });
+
+        // $(document).ready(function(){
+            // $("#flip").click(function(){
+            //     $("#panel").slideDown("slow");
+            // });
+            // $("#flip").click(function(){
+            //     $("#panel").slideUp("slow");
+            // });
+            // $("#flip").click(function(){
+            //     $("#panel").slideToggle("slow");
+            // });
+        // });
+
+        // $(document).ready(function () {
+            // $("#fadein").click(function(){
+            //     $("#para1").fadeIn();
+            //     $("#para2").fadeIn("show");
+            //     $("#para3").fadeIn(10000);
+            // })
+
+            // $("#fadeout").click(function(){
+            //     $("#para1").fadeOut();
+            //     $("#para2").fadeOut("show");
+            //     $("#para3").fadeOut(10000);
+            // })
+
+            // $("#fadeToggle").click(function(){
+            //     $("#para1").fadeToggle();
+            //     $("#para2").fadeToggle("show");
+            //     $("#para3").fadeToggle(3000);
+            // })
+
+            // $("#fadeTo").click(function(){
+            //     $("#para1").fadeTo("slow", 0.15);
+            //     $("#para2").fadeTo("slow", 0.4);
+            //     $("#para3").fadeTo("slow", 0.7);
+            // })
+            
+        // })
+
+        // Syntax:
+        // $(selector).action()
+
+        // The document Ready event
+        // $(document).ready(function(){
+        // jQuery methods go here...
+        // })
+
+
+        // $(document).ready(function(){
+        //     $("p").click(function(){
+        //         $(this).hide();
+        //     })
+        // })
+
+        // $(document).ready(function () {
+        //     $("#hide").click(function () {
+        //         $("p").hide();
+        //     })
+
+        //     $("#show").click(function () {
+        //         $("p").show();
+        //     })
+
+        //     $("#toggle").click(function () {
+        //         $("p").toggle();
+        //     })
+        // })
+
+
+    </script>
+</body>
+
+</html>
