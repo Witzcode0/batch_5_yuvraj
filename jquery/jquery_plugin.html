@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Plugin CDN Example</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI CSS CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+
+    <!-- jQuery UI JS CDN -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+        #menu { width: 200px; }
+    </style>
+</head>
+
+<body>
+
+<h2>jQuery UI Accordion</h2>
+<div id="accordion">
+    <h3>HTML</h3>
+    <div><p>HTML Content</p></div>
+
+    <h3>CSS</h3>
+    <div><p>CSS Content</p></div>
+
+    <h3>JavaScript</h3>
+    <div><p>JavaScript Content</p></div>
+</div>
+
+<hr>
+
+<h2>jQuery UI Tabs</h2>
+<div id="tabs">
+    <ul>
+        <li><a href="#tab1">Tab 1</a></li>
+        <li><a href="#tab2">Tab 2</a></li>
+    </ul>
+    <div id="tab1">This is Tab 1 content</div>
+    <div id="tab2">This is Tab 2 content</div>
+</div>
+
+<hr>
+
+<h2>jQuery UI Tooltip</h2>
+<input type="text" title="Enter your name here">
+
+<hr>
+
+<h2>jQuery UI Menu</h2>
+<ul id="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Services
+        <ul>
+            <li>Web</li>
+            <li>Mobile</li>
+        </ul>
+    </li>
+</ul>
+
+<hr>
+
+<h2>jQuery UI Datepicker</h2>
+<input type="text" id="datepicker">
+
+<script>
+    $(function () {
+        $("#accordion").accordion();
+        $("#tabs").tabs();
+        $(document).tooltip();
+        $("#menu").menu();
+        $("#datepicker").datepicker({
+            dateFormat: "yy-mm-dd"
+        });
+    });
+</script>
+
+</body>
+</html>
