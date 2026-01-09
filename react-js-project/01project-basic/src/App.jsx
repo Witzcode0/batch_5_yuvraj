@@ -3,6 +3,7 @@ import Part10DefaultProps from "./components/Part10DefaultProps"
 import Part11FunctionsasProps from "./components/Part11FunctionsasProps"
 import Part12ObjectArrayProps from "./components/Part12ObjectArrayProps"
 import Part13PropsTypes from "./components/Part13PropsTypes"
+import Part14Events from "./components/Part14Events"
 import Part2Func from "./components/Part2Func"
 import Part3Class from "./components/Part3Class"
 import Part3State from "./components/Part3State"
@@ -43,7 +44,8 @@ function App() {
      {/* <Part10DefaultProps /> */}
      {/* <Part11FunctionsasProps handleClick={showAlert}/> */}
      {/* <Part12ObjectArrayProps people={personData} /> */}
-     <Part13PropsTypes name="Brijesh" age={28}/>
+     {/* <Part13PropsTypes name="Brijesh" age={28}/> */}
+     <Part14Events />
     </>
   )
 }
