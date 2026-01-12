@@ -33,6 +33,14 @@
 // export default Hook02useEffect;
 
 
+// Key Takeaways
+  // No dependency array (useEffect(() => {...})) → Runs after every render.
+  // Empty dependency array (useEffect(() => {...}, [])) → Runs only once after the first render.
+  // Dependencies specified (useEffect(() => {...}, [dep1, dep2])) → Runs only when dependencies change.
+  // Cleanup function (return () => {...} inside useEffect) → Runs when the component unmounts.
+
+
+
 import React, { useEffect, useState } from 'react'
 
 function Hook02useEffect() {
