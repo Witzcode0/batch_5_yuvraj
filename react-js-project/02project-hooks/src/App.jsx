@@ -1,8 +1,13 @@
 import Hook01useState from "./components/Hook01useState"
 import Hook02useEffect from "./components/Hook02useEffect"
 import { TheamProvider } from "./components/Hook03useContext"
+import Hook04useRef from "./components/Hook04useRef"
+import Hook05useReducer from "./components/Hook05useReducer"
+import Hook06useMemo from "./components/Hook06useMemo"
 import Navbar from "./components/Navbar"
+import ShoppingCart from "./components/ShoppingCart"
 import { UsercontextProvider } from "./components/Usercontext"
+import WithoutUseMemo from "./components/withoutUseMemo"
 
 function App() {
 
@@ -13,7 +18,12 @@ function App() {
       {/* <TheamProvider>
         <Navbar />
       </TheamProvider> */}
-      <UsercontextProvider />
+      {/* <UsercontextProvider /> */}
+      {/* <Hook04useRef /> */}
+      {/* <Hook05useReducer /> */}
+      {/* <ShoppingCart /> */}
+      {/* <WithoutUseMemo/> */}
+      <Hook06useMemo />
     </>
   )
 }
