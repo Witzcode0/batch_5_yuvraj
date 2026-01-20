@@ -1,0 +1,27 @@
+.nested-navbar {
+    display: flex;
+    gap: 12px;
+    background-color: rgb(204, 176, 19);
+    padding: 5px;
+    border-radius: 15px;
+    width: 50%;
+    margin:10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nested-nav-item{
+    color: white;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+.nested-nav-item:hover {
+    background-color: white;
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+    border-radius: 5px;
+}

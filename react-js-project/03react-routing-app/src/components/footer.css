@@ -1,7 +1,17 @@
-.footer{
+.main-footer{
     background-color: black;
     padding: 15px;
     font-size: 2em;
     text-align: center;
     color: white;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+.footer-item{
+    text-decoration: none;
+    color: rgb(204, 176, 19);
 }
