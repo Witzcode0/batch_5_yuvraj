@@ -1,0 +1,20 @@
+{
+  "todos": [
+    {
+      "id": "3",
+      "text": "Learn Redux Thunk",
+      "completed": false
+    },
+    {
+      "id": "d5f8",
+      "text": "fdgsdfds",
+      "completed": false
+    },
+    {
+      "id": "ad97",
+      "text": "fgvdvgdv",
+      "completed": true
+    }
+  ]
+}
+
