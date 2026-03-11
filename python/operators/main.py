@@ -65,3 +65,58 @@
 # print("B" in name)
 # print("je" in name)
 # print("rje" in name)
+
+# logical
+
+# C1 C2 C3 and or
+# T  T  T  T   T
+# F  T  T  F   T
+# T  F  T  F   T
+# T  T  F  F   T
+# F  F  F  F   F
+
+# c not
+# T F
+# F T
+
+# print(not(10 < 20) and (20 < 10))
+# print((10 < 20) or not(20 < 10))
+
+# 2^7 2^6 2^5 2^4 2^3 2^2 2^1 2^0
+# 128  64  32  16   8   4   2   1
+
+
+# 3 = binary = 0011
+# 5 = binary = 0101
+#   a b & | ^
+# # 0 0 0 0 0
+# # 0 1 0 1 1
+# # 1 0 0 1 1
+# # 1 1 1 1 0
+
+# 0001 = 1
+# 0111 = 7
+# 0110 = 6
+# a = 3
+# b = 5
+# print(a&b)
+# print(a|b)
+# print(a^b)
+
+# <<, >>
+
+# x = 7
+# 7 = 00000111
+
+# print(x << 2)
+
+# 000111
+# 00011100
+
+# x = 5
+# print(~x)
+
+# -(x + 1)
+
+# x = 50
+# print(~x)
