@@ -71,13 +71,62 @@ num = 5
 # * * * * * * * * * 
 
 
-num = 5
+# num = 5
 
-for row in range(1, num+1):
-    for col in range(num-row, 0, -1):
-        print(" ", end=" ")
-    for col in range(1, row+1):
-        print("*", end=" ")
-    for col in range(1, row):
-        print("*", end=" ")
-    print()
+# for row in range(1, num+1):
+#     for col in range(num-row, 0, -1):
+#         print(" ", end=" ")
+#     for col in range(1, row+1):
+#         print("*", end=" ")
+#     for col in range(1, row):
+#         print("*", end=" ")
+#     print()
+
+
+# * 
+# * * 
+# * * * 
+# * * * * 
+# * * * * *
+
+# num = 5
+
+# for row in range(1, num+1):
+#     for col in range(1, row+1):
+#         print(row, end=" ")
+#     print()
+
+# num = 5
+
+# for row in range(1, num+1):
+#     for col in range(1, row+1):
+#         print(col, end=" ")
+#     print()
+
+
+# print(ord('A'))
+# print(chr(65))
+
+# num = 5
+
+# for row in range(1, num+1):
+#     for col in range(1, row+1):
+#         print(chr(col + 64), end=" ")
+#     print()
+
+
+# num = 5
+# g_var = 1
+# for row in range(1, num+1):
+#     for col in range(1, row+1):
+#         print(chr(g_var + 64), end=" ")
+#         g_var+=1
+#     print()
+
+# num = 5
+# g_var = 1
+# for row in range(1, num+1):
+#     for col in range(1, row+1):
+#         print(g_var, end=" ")
+#         g_var+=1
+#     print()
